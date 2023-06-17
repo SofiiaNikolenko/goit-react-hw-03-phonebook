@@ -18,8 +18,6 @@ class App extends Component {
   handleSubmit = values => {
     const contactId = nanoid();
 
-    console.log(values);
-
     if (this.state.contacts.some(item => item.name === values.name)) {
       alert(`${values.name} is already in contacts`);
       return;
